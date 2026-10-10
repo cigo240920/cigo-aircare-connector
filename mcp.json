@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "cigo-aircare": {
+      "url": "https://cigo-mcp-system-wzoy.onrender.com/mcp/"
+    }
+  }
+}
