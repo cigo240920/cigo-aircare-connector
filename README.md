@@ -4,6 +4,20 @@ Connect MCP-compatible clients to Cigo's hosted MCP server for vehicle cabin-fil
 HVAC product specifications and B2B inquiries. No local Python server or API key
 is required. An internet connection and a client with remote MCP support are needed.
 
+## Quick start / 쉽게 연결하기
+
+No server installation or API key is needed. Your AI app must support remote MCP; its own plan and usage limits still apply.
+
+**Cursor:** [Add Cigo MCP to Cursor](https://cursor.com/link/mcp/install?name=cigo-aircare&config=eyJ1cmwiOiJodHRwczovL2NpZ28tbWNwLXN5c3RlbS13em95Lm9ucmVuZGVyLmNvbS9tY3AvIn0%3D), then review and confirm the connection in Cursor.
+
+**Manus:** Settings → Connectors → Create → Custom MCP. Enter the name **Cigo Aircare & Carsafe**, choose HTTP, and use the server URL below. No custom authorization header is needed. Save the connector. Creation was verified with a free Manus account on 2026-10-13; this does not publish it to all Manus users.
+
+**한국어 안내:** Cursor는 위 설치 링크를 누른 뒤 연결을 확인하세요. Manus는 설정 → 커넥터 → 생성 → 사용자 정의 MCP에서 아래 주소를 입력하고 저장하세요. 별도 서버 설치나 API 키는 필요 없습니다.
+
+Server URL: https://cigo-mcp-system-wzoy.onrender.com/mcp/
+
+Try asking: "씨고 BFU 필터의 규격과 풍량별 소비전력을 알려줘." / "Find the cabin filter for my vehicle model and year."
+
 ## Tools
 
 | Tool | Purpose | Writes data |
@@ -16,9 +30,7 @@ is required. An internet connection and a client with remote MCP support are nee
 
 ## Connect
 
-After installing the plugin, enable the `cigo-aircare` MCP server in Cursor.
-For direct setup before marketplace approval, add the following entry to your
-Cursor MCP settings (`mcp.json`):
+For manual setup, add the following entry to your Cursor MCP settings (`mcp.json`):
 
 ```json
 {
