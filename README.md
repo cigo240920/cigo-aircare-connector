@@ -18,6 +18,18 @@ Server URL: https://cigo-mcp-system-wzoy.onrender.com/mcp/
 
 Try asking: "씨고 BFU 필터의 규격과 풍량별 소비전력을 알려줘." / "Find the cabin filter for my vehicle model and year."
 
+## Gemini CLI
+
+Install this connector from the public repository:
+
+```sh
+gemini extensions install https://github.com/cigo240920/cigo-aircare-connector
+```
+
+Review the extension permissions, restart Gemini CLI, then use `/mcp` to check the connection. No Cigo API key is needed. This extension is for Gemini CLI, not the Gemini consumer app.
+
+To get later connector changes, run `gemini extensions update cigo-aircare`. The hosted server is managed separately.
+
 ## Tools
 
 | Tool | Purpose | Writes data |
