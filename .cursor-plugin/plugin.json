@@ -1,0 +1,22 @@
+{
+  "name": "cigo-aircare",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Find compatible Carsafe cabin filters by vehicle and year, compare Cigo HVAC FFU/BFU performance and power consumption, and submit B2B inquiries.",
+  "author": {
+    "name": "Cigo",
+    "email": "cigo240920@gmail.com"
+  },
+  "homepage": "https://github.com/cigo240920/cigo-aircare-connector",
+  "repository": "https://github.com/cigo240920/cigo-aircare-connector",
+  "keywords": [
+    "mcp",
+    "aircare",
+    "carsafe",
+    "hvac",
+    "filters",
+    "nanofiber",
+    "b2b"
+  ],
+  "mcpServers": "mcp.json"
+}
