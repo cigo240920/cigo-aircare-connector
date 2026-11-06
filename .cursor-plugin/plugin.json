@@ -1,8 +1,8 @@
 {
   "name": "cigo-aircare",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
-  "description": "Find compatible Carsafe cabin filters by vehicle and year, compare Cigo HVAC FFU/BFU performance and power consumption, and submit B2B inquiries.",
+  "description": "Carsafe vehicle matching and domestic purchase links, Cigo HVAC specifications and measured power comparisons, and user-confirmed B2B inquiries.",
   "author": {
     "name": "Cigo",
     "email": "cigo240920@gmail.com"
