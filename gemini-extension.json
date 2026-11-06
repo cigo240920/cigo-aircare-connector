@@ -1,7 +1,7 @@
 {
   "name": "cigo-aircare",
-  "version": "1.0.1",
-  "description": "Cigo HVAC filter specifications and power comparisons, Carsafe cabin-filter matching, air-quality guidance and B2B inquiries.",
+  "version": "1.0.2",
+  "description": "Carsafe vehicle matching and domestic purchase links, Cigo HVAC specifications and measured power comparisons, and user-confirmed B2B inquiries.",
   "mcpServers": {
     "cigo-aircare": {
       "httpUrl": "https://cigo-mcp-system-wzoy.onrender.com/mcp/?source=gemini"
