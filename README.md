@@ -99,6 +99,8 @@ or SMS reminder has been sent.
 
 ## Data handling
 
+Read the [data-handling and retention status](DATA_HANDLING.md) before using inquiry or CRM tools. It includes operator contact, deletion requests and outstanding retention-enforcement limitations.
+
 Tool arguments are sent over HTTPS to Cigo's hosted server on Render. Do not enter
 
 passwords, payment information or unrelated personal information into tool fields.
