@@ -37,11 +37,22 @@ The operator has selected the following retention targets:
 | Uncompleted inquiry | 1 year after the last customer contact |
 | Replacement-date record | 1 year after registration |
 
-These are selected targets, **not a claim that automatic deletion currently runs**.
-Scheduled purge enforcement, completion/last-contact tracking and handling of
-infrastructure logs, backups and email copies have not yet been verified for these
-targets. Records may remain until the operator processes deletion. This document
-does not represent the outstanding implementation work as complete.
+Production retention cleanup was activated and checked on 2026-11-07. Supabase runs
+the inquiry/usage cleanup daily at 03:15 Korea time. Completion and explicit customer-contact
+dates are now recorded. Updating internal notes or reply drafts does not reset those dates.
+Legacy inquiries without a known completion/last-contact date are retained pending operator
+review; dates are not guessed. Operators must explicitly record customer contacts made outside
+the service (for example by telephone or email).
+
+The shared hosted server checks replacement-date records on startup, hourly while running,
+and when registering a record. A sleeping/offline instance resumes cleanup on its next start.
+Its current file-based storage is not a durable cross-deployment customer database.
+Installed copies do not automatically receive the hosted server's configuration or updates.
+
+These controls apply to the live inquiry/usage database and hosted CRM file, not to existing
+email copies, downloaded exports, source-control history, infrastructure logs or backups.
+Those copies require separate operator/provider retention handling. This is not a claim that
+all copies have been erased or that every privacy/security review finding is resolved.
 
 ## Deletion requests and user choice
 
